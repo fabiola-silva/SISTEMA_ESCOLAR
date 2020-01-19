@@ -10,8 +10,10 @@
 
     <link rel="shortcut icon" href="img/ESCOLA.png" />
 
-    <?
-    require "conexao.php";    
+    <?php
+    require "conexao.php"; 
+    include "validacao.php"; 
+   
     ?>
 </head>
 <body>
@@ -24,6 +26,7 @@
     </div>
 
     <div id="caixa_login">
+ 
         <form name ="form" method="post" action="" enctype="multipart/form-data">
             <table>
                 <tr>
