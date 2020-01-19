@@ -4,7 +4,7 @@
         $password = $_POST['password'];
 
         if($code == ''){
-            echo '<h2>Por favor digite seu codigo de acesso</h2>';
+            echo '<h2>Por favor digite seu codigo de acesso ou nº do cartão</h2>';
         }else if ($password == '') {
             echo '<h2>Digite sua senha</h2>';
         }
