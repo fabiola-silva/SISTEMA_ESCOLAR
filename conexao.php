@@ -1,7 +1,17 @@
 <?php
 
-$db = mysqli_connect("localhost", "root", "");
-$conexao = mysqli_select_db($db,"sistema_escolar");
+    function conectar(){
+
+        $servidor = "localhost";
+        $usuario = "root";
+        $senha = "";
+        $db = "sistema_escolar";
+
+        $con = new mysqli($servidor, $usuario, $senha, $db);
+        return $con;
+
+    } 
+        $conexao = conectar();
 
 
 

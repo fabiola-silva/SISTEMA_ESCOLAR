@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sistema Escolar</title>
     
-    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" /> 
 
     <link rel="shortcut icon" href="img/ESCOLA.png" />
+
+    <script src="js/login.js"></script>
+
 
     <?php
     require "conexao.php"; 
@@ -39,13 +42,17 @@
                     <td><h1>Senha:</h1></td>
                 </tr>
                 <tr>
-                    <td><input type="password" name="password"/></td>
-                </tr>
-                <tr>
-                    <td><input class="input" type="submit" name="button" value="Acessar"/></td>
-                </tr>
-
-
+                    <td><input type="password" id="password" name="password"> </br>
+                    <button type="button" id="caixa" class="caixa" onclick="mostrarOcultarSenha()" >
+                    </button>   
+                            Mostrar Senha
+                </td>
+            </tr>
+            <tr>
+                <td><input class="input" type="submit" name="button" value="Acessar"/></td>
+            </tr>
+            
+            
             </table>
         </form>
     </div>
