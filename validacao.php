@@ -16,12 +16,31 @@
                 while($res_1 = mysqli_fetch_assoc($result)){
                     $status = $res_1['status'];
                     $code = $res_1['code'];
-                    $code = $res_1['code'];
+                    $senha = $res_1['senha'];
                     $nome = $res_1['nome'];
                     $painel = $res_1['painel'];
 
-                    if($status == 'Inativo'){
+                    if($status == 'inativo'){
                         echo "Você está inativo, procure a coordenação";
+                    }else {
+                        
+                        session_start();
+                        $_SESSION['code'] = $code;
+                        $_SESSION['nome'] = $nome;
+                        $_SESSION['senha'] = $senha;
+                        $_SESSION['painel'] = $painel;
+
+                        if ($painel == 'admin') {
+                            echo"<script languagem='javascript'> window.location='admin';</script>";
+                        }else if ($painel == 'Aluno') {
+                            echo"<script languagem='javascript'> window.location='aluno';</script>";
+                        }else if ($painel == 'Professor') {
+                            echo"<script languagem='javascript'> window.location='professor';</script>";
+                        }else if ($painel == 'portaria') {
+                            echo"<script languagem='javascript'> window.location='portaria';</script>";
+                        }else if ($painel == 'tesouraria') {
+                            echo"<script languagem='javascript'> window.location='tesouraria';</script>";
+                        }
                     }
                 }
 
