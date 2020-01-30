@@ -1,0 +1,32 @@
+body{
+    background:#d5f4e6;
+
+}
+
+#box{
+    margin-right: 450px;
+    margin-left: 450px;
+    margin-top: 80px;
+    border-radius: 10px;
+    border: 1px solid #96ceb4;
+    
+}
+
+#porteiro{
+    text-align: center;
+    font-size:30px;
+    
+    
+}
+
+
+#logo img{
+    
+    margin-left: 80px;
+    margin-top: 70px;
+    
+}
+
+#lixeira{
+    height: 35px;    
+}

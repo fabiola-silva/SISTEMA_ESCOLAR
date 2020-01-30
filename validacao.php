@@ -30,15 +30,15 @@
                         $_SESSION['senha'] = $senha;
                         $_SESSION['painel'] = $painel;
 
-                        if ($painel == 'admin') {
+                        if ($painel == 'Admin') {
                             echo"<script languagem='javascript'> window.location='admin';</script>";
                         }else if ($painel == 'Aluno') {
                             echo"<script languagem='javascript'> window.location='aluno';</script>";
                         }else if ($painel == 'Professor') {
                             echo"<script languagem='javascript'> window.location='professor';</script>";
-                        }else if ($painel == 'portaria') {
+                        }else if ($painel == 'Portaria') {
                             echo"<script languagem='javascript'> window.location='portaria';</script>";
-                        }else if ($painel == 'tesouraria') {
+                        }else if ($painel == 'Tesouraria') {
                             echo"<script languagem='javascript'> window.location='tesouraria';</script>";
                         }
                     }
