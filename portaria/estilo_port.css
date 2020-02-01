@@ -4,29 +4,98 @@ body{
 }
 
 #box{
-    margin-right: 450px;
-    margin-left: 450px;
-    margin-top: 80px;
+    position: absolute;
+    margin: 100px 10px 10px 450px;
     border-radius: 10px;
     border: 1px solid #96ceb4;
+    box-shadow:  1px 1px 5px 5px #c0d1e6;
     
 }
 
 #porteiro{
     text-align: center;
     font-size:30px;
-    
-    
+        
 }
 
 
 #logo img{
     
-    margin-left: 80px;
+    margin-left: 100px;
     margin-top: 70px;
     
 }
 
 #lixeira{
-    height: 35px;    
+    position: absolute;
+    right:5%;
+    top:83%;
+    height: 40px;    
+}
+
+#campo_busca{
+    margin-left: 70px;
+
+}
+
+#btn_enviar {
+	-moz-box-shadow:inset 0px -1px 0px -8px #f4cafc;
+	-webkit-box-shadow:inset 0px -1px 0px -8px #f4cafc;
+	box-shadow:inset 0px -1px 0px -8px #f4cafc;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #6742e3), color-stop(1, #e189f5) );
+	background:-moz-linear-gradient( center top, #6742e3 5%, #e189f5 100% );
+	background-color:#6742e3;
+	-webkit-border-top-left-radius:18px;
+	-moz-border-radius-topleft:18px;
+	border-top-left-radius:18px;
+	-webkit-border-top-right-radius:18px;
+	-moz-border-radius-topright:18px;
+	border-top-right-radius:18px;
+	-webkit-border-bottom-right-radius:18px;
+	-moz-border-radius-bottomright:18px;
+	border-bottom-right-radius:18px;
+	-webkit-border-bottom-left-radius:18px;
+	-moz-border-radius-bottomleft:18px;
+	border-bottom-left-radius:18px;
+	text-indent:0;
+	border:1px solid #7f66d1;
+	display:inline-block;
+	color:#030303;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	font-style:normal;
+	height:45px;
+	line-height:45px;
+	width:70px;
+	text-decoration:none;
+	text-align:center;
+}
+#btn_enviar:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e189f5), color-stop(1, #6742e3) );
+	background:-moz-linear-gradient( center top, #e189f5 5%, #6742e3 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e189f5', endColorstr='#6742e3');
+	background-color:#e189f5;
+}
+#btn_enviar:active {
+	position:relative;
+    top:1px;
+}
+
+#btn_cpf{
+    height: 35px;
+}
+
+#btn_cpf:hover {
+	background-color:#cbb9ce;
+}
+
+#campo_aluno{
+    margin-left: 65px;
+    margin-top:35px;
+    margin-bottom: 9%;
+}
+
+#img_exit{
+    height: 20px;
 }
